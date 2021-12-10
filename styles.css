@@ -1,5 +1,6 @@
 body {
 	background: black;
+	font-family: 'Handlee', cursive;
 }
 
 .postcard {
@@ -7,15 +8,18 @@ body {
 	width: 400px;
 	height: 300px;
 	margin: auto;
-	padding: 10px;
+	padding: 15px;
 }
 
 .postcard-header {
 	display: flex;
+	margin-bottom: 10px;
 }
 
 .postcard-body {
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 img {
@@ -33,7 +37,9 @@ h1 {
 }
 
 .body-left {
-	padding-right: 10px;
+	display: flex;
+	flex-direction: column;
+	padding-right: 20px;
 }
 
 input {
@@ -42,7 +48,9 @@ input {
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	font-size: 1.1em;
+	font-size: 1em;
+	font-family: 'Handlee', cursive;
+	margin-bottom: 5px;
 }
 
 p {
@@ -50,9 +58,19 @@ p {
 }
 
 .postcard-footer {
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
 }
 
 button {
+	display: flex;
 	padding: 5px;
+	align-self: center;
+}
+
+.body-right{
+	display: flex;
+	flex-direction: column;
+	width: 600px;
 }
